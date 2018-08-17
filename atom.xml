@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>kaijun</title>
+  <icon>https://www.gravatar.com/avatar/10b0210c79b974bbf247aefbef1206dc</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://www.toshareword.com/"/>
+  <updated>2018-08-16T15:55:43.820Z</updated>
+  <id>https://www.toshareword.com/</id>
+  
+  <author>
+    <name>樊开俊</name>
+    <email>826530928@qq.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.toshareword.com/2018/08/16/testBlog/"/>
+    <id>https://www.toshareword.com/2018/08/16/testBlog/</id>
+    <published>2018-08-16T15:55:43.819Z</published>
+    <updated>2018-08-16T15:55:43.820Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>title oneBlog<br>date 2018-08-16 23:46:51</p><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;p&gt;title oneBlog&lt;br&gt;date 2018-08-16 23:46:51&lt;/p&gt;
+&lt;hr&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
