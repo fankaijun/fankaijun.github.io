@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.toshareword.com/"/>
-  <updated>2018-08-19T03:51:02.737Z</updated>
+  <updated>2018-08-19T04:11:21.265Z</updated>
   <id>https://www.toshareword.com/</id>
   
   <author>
@@ -17,20 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>oneBlog</title>
+    <title>hexo使用</title>
     <link href="https://www.toshareword.com/2018/08/16/testBlog/"/>
     <id>https://www.toshareword.com/2018/08/16/testBlog/</id>
     <published>2018-08-16T15:46:51.000Z</published>
-    <updated>2018-08-19T03:51:02.737Z</updated>
+    <updated>2018-08-19T04:11:21.265Z</updated>
     
-    <content type="html"><![CDATA[<p>##这是hexo的使用</p><p>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署</p><p>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="这是hexo的使用"><a href="#这是hexo的使用" class="headerlink" title="这是hexo的使用"></a>这是hexo的使用</h2><p>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署</p><p>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;##这是hexo的使用&lt;/p&gt;
-&lt;p&gt;hexo n “我的博客” == hexo new “我的博客” #新建文章&lt;br&gt;hexo g == hexo generate #生成&lt;br&gt;hexo s == hexo server #启动服务预览&lt;br&gt;hexo d == he
+        &lt;h2 id=&quot;这是hexo的使用&quot;&gt;&lt;a href=&quot;#这是hexo的使用&quot; class=&quot;headerlink&quot; title=&quot;这是hexo的使用&quot;&gt;&lt;/a&gt;这是hexo的使用&lt;/h2&gt;&lt;p&gt;hexo n “我的博客” == hexo new “我的博客” #新建文章&lt;br&gt;
       
     
     </summary>
