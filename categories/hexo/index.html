@@ -72,6 +72,7 @@
 
 
 
+
   
   
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
@@ -418,8 +419,8 @@
 
           
 
+{% if theme.livere.enable or theme.gitment.enable or theme.disqus.enable %}
 
-  <!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTAxOS8xNTU0Ng==">
 <script type="text/javascript">
    (function(d, s) {
@@ -434,9 +435,10 @@
        e.parentNode.insertBefore(j, e);
    })(document, 'script');
 </script>
-<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
-<!-- City版安装代码已完成 -->
+
+{% endif %}
+
 
 
 
@@ -575,7 +577,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://www.toshareword.com">fankaijun</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://www.toshareword.com"></a> v5.1.4</div>
 
 
 
