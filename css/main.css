@@ -1252,17 +1252,51 @@ pre .javascript .function {
   -o-transform: rotate(30deg);
   transform: rotate(30deg);
 }
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+}
+.post-body p a:hover {
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
+}
+作者：WenBo丨星空灬 .post-block,
+链接：https: .post-block,
+來源：简书 .post-block,
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。 .post-block,
 .use-motion .post-block,
+作者：WenBo丨星空灬 .pagination,
+链接：https: .pagination,
+來源：简书 .pagination,
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。 .pagination,
 .use-motion .pagination,
+作者：WenBo丨星空灬 .comments,
+链接：https: .comments,
+來源：简书 .comments,
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。 .comments,
 .use-motion .comments {
   opacity: 0;
 }
+作者：WenBo丨星空灬 .post-header,
+链接：https: .post-header,
+來源：简书 .post-header,
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。 .post-header,
 .use-motion .post-header {
   opacity: 0;
 }
+作者：WenBo丨星空灬 .post-body,
+链接：https: .post-body,
+來源：简书 .post-body,
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。 .post-body,
 .use-motion .post-body {
   opacity: 0;
 }
+作者：WenBo丨星空灬 .collection-title,
+链接：https: .collection-title,
+來源：简书 .collection-title,
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。 .collection-title,
 .use-motion .collection-title {
   opacity: 0;
 }
@@ -1993,7 +2027,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #408355;
+  background: #ffe824;
 }
 .links-of-blogroll {
   font-size: 13px;

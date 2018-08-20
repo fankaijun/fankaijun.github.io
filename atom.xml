@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.toshareword.com/"/>
-  <updated>2018-08-19T04:47:51.020Z</updated>
+  <updated>2018-08-19T23:59:46.475Z</updated>
   <id>https://www.toshareword.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.toshareword.com/2018/08/16/testBlog/"/>
     <id>https://www.toshareword.com/2018/08/16/testBlog/</id>
     <published>2018-08-16T15:46:51.000Z</published>
-    <updated>2018-08-19T04:47:51.020Z</updated>
+    <updated>2018-08-19T23:59:46.475Z</updated>
     
     <content type="html"><![CDATA[<h2 id="这是hexo的使用"><a href="#这是hexo的使用" class="headerlink" title="这是hexo的使用"></a>这是hexo的使用</h2><p>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署</p><p>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>]]></content>
     
