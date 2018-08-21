@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[hexo使用]]></title>
-    <url>%2F2018%2F08%2F16%2FtestBlog%2F</url>
-    <content type="text"><![CDATA[这是hexo的使用hexo n “我的博客” == hexo new “我的博客” #新建文章hexo g == hexo generate #生成hexo s == hexo server #启动服务预览hexo d == hexo deploy #部署 hexo server #Hexo会监视文件变动并自动更新，无须重启服务器hexo server -s #静态模式hexo server -p 5000 #更改端口hexo server -i 192.168.1.1 #自定义 IPhexo clean #清除缓存，若是网页正常情况下可以忽略这条命令]]></content>
+<search> 
+  
+    
+    <entry>
+      <title>hexo使用</title>
+      <link href="/2018/08/16/testBlog/"/>
+      <url>/2018/08/16/testBlog/</url>
+      <content type="html"><![CDATA[<h2 id="这是hexo的使用"><a href="#这是hexo的使用" class="headerlink" title="这是hexo的使用"></a>这是hexo的使用</h2><p>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署</p><p>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>]]></content>
+      
       <categories>
-        <category>hexo</category>
+          
+          <category> hexo </category>
+          
       </categories>
-      <tags>
-        <tag>使用hexo</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 使用hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
 </search>
