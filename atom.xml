@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.toshareword.com/"/>
-  <updated>2018-08-19T23:59:46.475Z</updated>
+  <updated>2018-08-26T14:58:28.907Z</updated>
   <id>https://www.toshareword.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>maya_return_cmd</title>
+    <link href="https://www.toshareword.com/2018/08/26/maya-cmd-return/"/>
+    <id>https://www.toshareword.com/2018/08/26/maya-cmd-return/</id>
+    <published>2018-08-26T14:07:08.000Z</published>
+    <updated>2018-08-26T14:58:28.907Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="如何使用python去设置maya的渲染设置"><a href="#如何使用python去设置maya的渲染设置" class="headerlink" title="如何使用python去设置maya的渲染设置"></a>如何使用python去设置maya的渲染设置</h1><h2 id="如何去获取这些设置选项的命令"><a href="#如何去获取这些设置选项的命令" class="headerlink" title="如何去获取这些设置选项的命令"></a>如何去获取这些设置选项的命令</h2><h3 id="通过改变某些渲染的设置值去命令"><a href="#通过改变某些渲染的设置值去命令" class="headerlink" title="通过改变某些渲染的设置值去命令"></a>通过改变某些渲染的设置值去命令</h3><p>众所周知我们改变某些值的时候在maya的脚本编辑器里面会有命令返回，我们直接运行这些命令就可以了<br>这个我就不再细说了<br><img src="./maya_cmd_retuen.jpg" alt="name" title="如下图"></p><h3 id="如何获取脚本编辑器里面没有返回的命令"><a href="#如何获取脚本编辑器里面没有返回的命令" class="headerlink" title="如何获取脚本编辑器里面没有返回的命令"></a>如何获取脚本编辑器里面没有返回的命令</h3><h4 id="1-maya里面的渲染设置是maya里面其中的一个节点"><a href="#1-maya里面的渲染设置是maya里面其中的一个节点" class="headerlink" title="1.maya里面的渲染设置是maya里面其中的一个节点"></a>1.maya里面的渲染设置是maya里面其中的一个节点</h4><p><img src="./maya_cmd_return1.jpg" alt="name" title="请仔细观看下图"><br><img src="./maya_cmd_retuen2.jpg" alt="name" title="请仔细观看下图"></p><h4 id="2-如何去获取那些节点的属性"><a href="#2-如何去获取那些节点的属性" class="headerlink" title="2.如何去获取那些节点的属性"></a>2.如何去获取那些节点的属性</h4><pre><code>&quot;&quot;&quot;import maya.cmds as cmds render_glob = &quot;defaultRenderGlobals&quot;list_Attr = cmds.listAttr(render_glob, r=True, s=True)for attr in list_Attr:get_attr_name = &quot;%s.%s&quot;%(render_glob, attr)print &quot;setAttr %s %s&quot;%(get_attr_name, cmds.getAttr(get_attr_name))&quot;&quot;&quot;</code></pre><h4 id="3-获取的节点如下"><a href="#3-获取的节点如下" class="headerlink" title="3.获取的节点如下"></a>3.获取的节点如下</h4><pre><code>&quot;&quot;&quot;setAttr defaultRenderGlobals.caching FalsesetAttr defaultRenderGlobals.isHistoricallyInteresting 2setAttr defaultRenderGlobals.nodeState 0setAttr defaultRenderGlobals.frozen FalsesetAttr defaultRenderGlobals.macCodec 1919706400setAttr defaultRenderGlobals.macDepth 32setAttr defaultRenderGlobals.macQual 1024setAttr defaultRenderGlobals.comFrrt 24setAttr defaultRenderGlobals.renderAll TruesetAttr defaultRenderGlobals.ignoreFilmGate TruesetAttr defaultRenderGlobals.clipFinalShadedColor TruesetAttr defaultRenderGlobals.enableDepthMaps TruesetAttr defaultRenderGlobals.enableDefaultLight TruesetAttr defaultRenderGlobals.enableStrokeRender TruesetAttr defaultRenderGlobals.onlyRenderStrokes FalsesetAttr defaultRenderGlobals.imageFormat 11setAttr defaultRenderGlobals.gammaCorrection 1.0setAttr defaultRenderGlobals.exrCompression 0setAttr defaultRenderGlobals.exrPixelType 0setAttr defaultRenderGlobals.topRegion 256setAttr defaultRenderGlobals.leftRegion 0setAttr defaultRenderGlobals.bottomRegion 0setAttr defaultRenderGlobals.rightRegion 256setAttr defaultRenderGlobals.useRenderRegion FalsesetAttr defaultRenderGlobals.animation TruesetAttr defaultRenderGlobals.animationRange 1setAttr defaultRenderGlobals.startFrame 1.0setAttr defaultRenderGlobals.endFrame 10.0setAttr defaultRenderGlobals.byFrame 1.0setAttr defaultRenderGlobals.byFrameStep 1.0setAttr defaultRenderGlobals.skipExistingFrames FalsesetAttr defaultRenderGlobals.modifyExtension FalsesetAttr defaultRenderGlobals.startExtension 1.0setAttr defaultRenderGlobals.byExtension 1.0setAttr defaultRenderGlobals.extensionPadding 4setAttr defaultRenderGlobals.fieldExtControl 0setAttr defaultRenderGlobals.outFormatControl 0setAttr defaultRenderGlobals.useMayaFileName TruesetAttr defaultRenderGlobals.useFrameExt FalsesetAttr defaultRenderGlobals.putFrameBeforeExt FalsesetAttr defaultRenderGlobals.periodInExt 1setAttr defaultRenderGlobals.multiCamNamingMode 0setAttr defaultRenderGlobals.composite FalsesetAttr defaultRenderGlobals.compositeThreshold 0.0setAttr defaultRenderGlobals.shadowsObeyLightLinking TruesetAttr defaultRenderGlobals.shadowsObeyShadowLinking FalsesetAttr defaultRenderGlobals.recursionDepth 2setAttr defaultRenderGlobals.leafPrimitives 200setAttr defaultRenderGlobals.subdivisionPower 0.25setAttr defaultRenderGlobals.subdivisionHashSize 5setAttr defaultRenderGlobals.logRenderPerformance FalsesetAttr defaultRenderGlobals.geometryVector 20setAttr defaultRenderGlobals.shadingVector 60setAttr defaultRenderGlobals.maximumMemory 48setAttr defaultRenderGlobals.numCpusToUse 0setAttr defaultRenderGlobals.interruptFrequency 1setAttr defaultRenderGlobals.shadowPass FalsesetAttr defaultRenderGlobals.iprShadowPass FalsesetAttr defaultRenderGlobals.useFileCache TruesetAttr defaultRenderGlobals.optimizeInstances TruesetAttr defaultRenderGlobals.reuseTessellations TruesetAttr defaultRenderGlobals.matteOpacityUsesTransparency TruesetAttr defaultRenderGlobals.motionBlur FalsesetAttr defaultRenderGlobals.motionBlurByFrame 1.0setAttr defaultRenderGlobals.motionBlurUseShutter FalsesetAttr defaultRenderGlobals.motionBlurShutterOpen -0.5setAttr defaultRenderGlobals.motionBlurShutterClose 0.5setAttr defaultRenderGlobals.applyFogInPost FalsesetAttr defaultRenderGlobals.postFogBlur 1setAttr defaultRenderGlobals.createIprFile FalsesetAttr defaultRenderGlobals.blurLength 1.0setAttr defaultRenderGlobals.blurSharpness 1.0setAttr defaultRenderGlobals.smoothValue 2setAttr defaultRenderGlobals.useBlur2DMemoryCap TruesetAttr defaultRenderGlobals.blur2DMemoryCap 200.0setAttr defaultRenderGlobals.motionBlurType 1setAttr defaultRenderGlobals.useDisplacementBoundingBox TruesetAttr defaultRenderGlobals.smoothColor FalsesetAttr defaultRenderGlobals.keepMotionVector FalsesetAttr defaultRenderGlobals.iprRenderShading TruesetAttr defaultRenderGlobals.iprRenderShadowMaps TruesetAttr defaultRenderGlobals.iprRenderMotionBlur TruesetAttr defaultRenderGlobals.renderLayerEnable FalsesetAttr defaultRenderGlobals.forceTileSize FalsesetAttr defaultRenderGlobals.tileWidth 64setAttr defaultRenderGlobals.tileHeight 64setAttr defaultRenderGlobals.jitterFinalColor TruesetAttr defaultRenderGlobals.raysSeeBackground TruesetAttr defaultRenderGlobals.oversamplePaintEffects FalsesetAttr defaultRenderGlobals.oversamplePfxPostFilter FalsesetAttr defaultRenderGlobals.colorProfileEnabled FalsesetAttr defaultRenderGlobals.renderingColorProfile 2setAttr defaultRenderGlobals.inputColorProfile 3setAttr defaultRenderGlobals.outputColorProfile 2setAttr defaultRenderGlobals.renderedOutput 0&quot;&quot;&quot;这些代码可以直接在mel编辑器里面去运行</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      maya python设置maya的渲染设置
+    
+    </summary>
+    
+      <category term="maya" scheme="https://www.toshareword.com/categories/maya/"/>
+    
+    
+      <category term="maya" scheme="https://www.toshareword.com/tags/maya/"/>
+    
+      <category term="mel" scheme="https://www.toshareword.com/tags/mel/"/>
+    
+      <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
+    
+      <category term="python设置maya的渲染设置" scheme="https://www.toshareword.com/tags/python%E8%AE%BE%E7%BD%AEmaya%E7%9A%84%E6%B8%B2%E6%9F%93%E8%AE%BE%E7%BD%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo使用</title>
