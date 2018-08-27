@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://www.toshareword.com/2018/08/26/maya-cmd-return/</loc>
-    <lastmod>2018-08-26T16:23:30.251Z</lastmod>
+    <lastmod>2018-08-27T12:45:44.128Z</lastmod>
     <data>
         <display>
         <title>maya python设置maya的渲染设置</title>
