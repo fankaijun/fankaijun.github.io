@@ -4,6 +4,36 @@
 
     
   <url>
+    <loc>https://www.toshareword.com/2018/08/26/python-install/</loc>
+    <lastmod>2018-09-08T12:58:49.271Z</lastmod>
+    <data>
+        <display>
+        <title>python开发环境的搭建</title>
+        <pubTime>2018-08-26T14:07:08.000Z</pubTime>
+        
+        <tag>maya</tag>
+         
+        <tag>python</tag>
+         
+        <tag>教程</tag>
+         
+        <tag>pyside2</tag>
+         
+        <tag>pycharm</tag>
+         
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="maya" url="https://www.toshareword.com/categories/maya/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.toshareword.com/2018/08/26/maya-cmd-return/</loc>
     <lastmod>2018-08-27T12:45:44.128Z</lastmod>
     <data>
