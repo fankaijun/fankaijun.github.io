@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://www.toshareword.com/2018/08/26/python-install/</loc>
-    <lastmod>2018-09-08T12:58:49.271Z</lastmod>
+    <lastmod>2018-09-08T13:36:21.280Z</lastmod>
     <data>
         <display>
         <title>python开发环境的搭建</title>
