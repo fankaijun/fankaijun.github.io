@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://www.toshareword.com/2018/10/24/new-CG-jiaoben-jichu1/</loc>
-    <lastmod>2018-10-24T15:57:32.169Z</lastmod>
+    <lastmod>2018-10-24T16:04:22.059Z</lastmod>
     <data>
         <display>
         <title>CG脚本开发之python基础概念（一）</title>
