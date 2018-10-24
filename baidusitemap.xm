@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>https://www.toshareword.com/2018/10/24/new-CG-jiaoben-jichu1/</loc>
+    <lastmod>2018-10-24T15:57:32.169Z</lastmod>
+    <data>
+        <display>
+        <title>CG脚本开发之python基础概念（一）</title>
+        <pubTime>2018-10-24T15:58:08.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>教程</tag>
+         
+        <tag>变量</tag>
+         
+        <tag>常量</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="https://www.toshareword.com/categories/python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.toshareword.com/2018/08/26/python-install/</loc>
     <lastmod>2018-09-08T13:36:21.280Z</lastmod>
     <data>
