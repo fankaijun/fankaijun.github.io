@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.toshareword.com/"/>
-  <updated>2018-10-24T16:22:19.927Z</updated>
+  <updated>2018-10-28T13:23:01.597Z</updated>
   <id>https://www.toshareword.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CG脚本开发之python列表list</title>
+    <link href="https://www.toshareword.com/2018/10/28/new-CG-jiaoben-jichu3/"/>
+    <id>https://www.toshareword.com/2018/10/28/new-CG-jiaoben-jichu3/</id>
+    <published>2018-10-28T13:20:30.000Z</published>
+    <updated>2018-10-28T13:23:01.597Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="CG脚本开发之python列表list"><a href="#CG脚本开发之python列表list" class="headerlink" title=" CG脚本开发之python列表list"></a><center> CG脚本开发之python列表list</center></h2><blockquote><p>在Python里一切皆对象</p></blockquote><h3 id="什么是列表"><a href="#什么是列表" class="headerlink" title=" 什么是列表"></a><center> 什么是列表</center></h3><p>列表是我们使用Python在cg开发中最常用的数据类型因为列表里面可以存储很多的对象，下面我们就来说说列表<br><strong>什么是列表：中括号括起来就是列表</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">one = <span class="string">'1'</span> <span class="comment"># 一个字符串对象</span></span><br><span class="line">tow = <span class="number">8</span> <span class="comment"># 一个整型对象</span></span><br><span class="line">there = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="string">"sss"</span>] <span class="comment">#一个列表对象</span></span><br><span class="line">list_four = [one，tow，there] <span class="comment"># 列表里有几个对象就有几个元素</span></span><br></pre></td></tr></table></figure></p><p>我再说下什么是对象：字符串，数字，列表，元祖，字典，类的实例化对象这些都是对象<br><strong>我使用一个凡是定义下对象：凡是使用dir（）函数可以返回一个列表的就是对象</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>str_name = <span class="string">'aa'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dir(str_name)</span><br><span class="line">[<span class="string">'__add__'</span>, <span class="string">'__class__'</span>, <span class="string">'__contains__'</span>, <span class="string">'__delattr__'</span>, <span class="string">'__doc__'</span>, <span class="string">'__eq__'</span>, <span class="string">'__format__'</span>, <span class="string">'__ge__'</span>, <span class="string">'__getattribute__'</span>, <span class="string">'__getitem__'</span>, <span class="string">'__getnewargs__'</span>, <span class="string">'__getslice__'</span>, <span class="string">'__gt__'</span>, <span class="string">'__hash__'</span>, <span class="string">'__init__'</span>, <span class="string">'__le__'</span>, <span class="string">'__len__'</span>, <span class="string">'__lt__'</span>, <span class="string">'__mod__'</span>, <span class="string">'__mul__'</span>, <span class="string">'__ne__'</span>, <span class="string">'__new__'</span>, <span class="string">'__reduce__'</span>, <span class="string">'__reduce_ex__'</span>, <span class="string">'__repr__'</span>, <span class="string">'__rmod__'</span>, <span class="string">'__rmul__'</span>, <span class="string">'__setattr__'</span>, <span class="string">'__sizeof__'</span>, <span class="string">'__str__'</span>, <span class="string">'__subclasshook__'</span>, <span class="string">'_formatter_field_name_split'</span>, <span class="string">'_formatter_parser'</span>, <span class="string">'capitalize'</span>, <span class="string">'center'</span>, <span class="string">'count'</span>, <span class="string">'decode'</span>, <span class="string">'encode'</span>, <span class="string">'endswith'</span>, <span class="string">'expandtabs'</span>, <span class="string">'find'</span>, <span class="string">'format'</span>, <span class="string">'index'</span>, <span class="string">'isalnum'</span>, <span class="string">'isalpha'</span>, <span class="string">'isdigit'</span>, <span class="string">'islower'</span>, <span class="string">'isspace'</span>, <span class="string">'istitle'</span>, <span class="string">'isupper'</span>, <span class="string">'join'</span>, <span class="string">'ljust'</span>, <span class="string">'lower'</span>, <span class="string">'lstrip'</span>, <span class="string">'partition'</span>, <span class="string">'replace'</span>, <span class="string">'rfind'</span>, <span class="string">'rindex'</span>, <span class="string">'rjust'</span>, <span class="string">'rpartition'</span>, <span class="string">'rsplit'</span>, <span class="string">'rstrip'</span>, <span class="string">'split'</span>, <span class="string">'splitlines'</span>, <span class="string">'startswith'</span>, <span class="string">'strip'</span>, <span class="string">'swapcase'</span>, <span class="string">'title'</span>, <span class="string">'translate'</span>, <span class="string">'upper'</span>, <span class="string">'zfill'</span>]</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure></p><p>对于list_four的这个列表可能会有人说这个列表里面有6个元素，那么现在我们再看下这个</p><h3 id="如何去使用列表的增删改查等方法（授人以鱼不如授人以渔）"><a href="#如何去使用列表的增删改查等方法（授人以鱼不如授人以渔）" class="headerlink" title="如何去使用列表的增删改查等方法（授人以鱼不如授人以渔）"></a><center>如何去使用列表的增删改查等方法（授人以鱼不如授人以渔）</center></h3><p>我们来看下list对象里有哪些方法<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>list_name = []</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dir(list_name)</span><br><span class="line">[<span class="string">'__add__'</span>, <span class="string">'__class__'</span>, <span class="string">'__contains__'</span>, <span class="string">'__delattr__'</span>, <span class="string">'__delitem__'</span>, <span class="string">'__delslice__'</span>, <span class="string">'__doc__'</span>, <span class="string">'__eq__'</span>, <span class="string">'__format__'</span>, <span class="string">'__ge__'</span>, <span class="string">'__getattribute__'</span>, <span class="string">'__getitem__'</span>, <span class="string">'__getslice__'</span>, <span class="string">'__gt__'</span>, <span class="string">'__hash__'</span>, <span class="string">'__iadd__'</span>, <span class="string">'__imul__'</span>, <span class="string">'__init__'</span>, <span class="string">'__iter__'</span>, <span class="string">'__le__'</span>, <span class="string">'__len__'</span>, <span class="string">'__lt__'</span>, <span class="string">'__mul__'</span>, <span class="string">'__ne__'</span>, <span class="string">'__new__'</span>, <span class="string">'__reduce__'</span>, <span class="string">'__reduce_ex__'</span>, <span class="string">'__repr__'</span>, <span class="string">'__reversed__'</span>, <span class="string">'__rmul__'</span>, <span class="string">'__setattr__'</span>, <span class="string">'__setitem__'</span>, <span class="string">'__setslice__'</span>, <span class="string">'__sizeof__'</span>, <span class="string">'__str__'</span>, <span class="string">'__subclasshook__'</span>, <span class="string">'append'</span>, <span class="string">'count'</span>, <span class="string">'extend'</span>, <span class="string">'index'</span>, <span class="string">'insert'</span>, <span class="string">'pop'</span>, <span class="string">'remove'</span>, <span class="string">'reverse'</span>, <span class="string">'sort'</span>]</span><br><span class="line">以下划线开头的标识符是有特殊意义的。以单下划线开头（ _foo） 的代表不能直接访问的对象属性，需通过对象提供的接口进行访问</span><br><span class="line">以双下划线开头的 __foo 代表类的私有成员；以双下划线开头和结尾的 __foo__ 代表 Python 里特殊方法专用的标识，如 __init__() 代表类的构造函数</span><br><span class="line">不以下划线开头或者结尾的是可以直接访问的对象属性或者方法</span><br></pre></td></tr></table></figure></p><p>下面我们就来说说列表的方法：<br>从上面我们可以看出列表可以直接访问的方法有’append’, ‘count’, ‘extend’, ‘index’, ‘insert’, ‘pop’, ‘remove’, ‘reverse’, ‘sort’<br>来我们现在从单词意思来看</p><ul><li>append：添加</li><li>count：计数</li><li>extend：延伸</li><li>index：索引</li><li>insert：插入</li><li>pop：抛弃</li><li>remove：移除</li><li>reverse：反向</li><li>sort：分类，排序<br>基本我们想对列表的任何操作都有相应的方法去做<br>我们可以使用以下方式得到其中一个方法详细的使用说明<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>list_name = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>help(list_name.remove) <span class="comment"># 下面有对这个函数的详细介绍</span></span><br><span class="line">Help on built-<span class="keyword">in</span> function remove:</span><br><span class="line"></span><br><span class="line">remove(...)</span><br><span class="line">    L.remove(value) -- remove first occurrence of value.</span><br><span class="line">    Raises ValueError <span class="keyword">if</span> the value <span class="keyword">is</span> <span class="keyword">not</span> present.</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>list_name.remove(<span class="number">2</span>) <span class="comment"># 把对象2移除 </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> list_name</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>[<span class="number">1</span>,<span class="number">3</span>] <span class="comment"># 现在的结果</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>help(list_name.pop)<span class="comment"># 下面有对这个函数的详细介绍</span></span><br><span class="line">Help on built-<span class="keyword">in</span> function pop:</span><br><span class="line"></span><br><span class="line">pop(...)</span><br><span class="line">    L.pop([index]) -&gt; item -- remove and return item at index (default last).</span><br><span class="line">    Raises IndexError <span class="keyword">if</span> list <span class="keyword">is</span> empty <span class="keyword">or</span> index <span class="keyword">is</span> out of range.</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>list_name.pop() <span class="comment"># 把对象3移除 </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> list_name</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>[<span class="number">1</span>] <span class="comment"># 现在的结果</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>help(list_name.append) <span class="comment"># 下面有对这个函数的详细介绍</span></span><br><span class="line">Help on built-<span class="keyword">in</span> function append:</span><br><span class="line"></span><br><span class="line">append(...)</span><br><span class="line">    L.append(object) -- append object to end</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>list_name.append(<span class="number">2</span>) <span class="comment"># 把对象3移除 </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> list_name</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>[<span class="number">1</span>,<span class="number">2</span>] <span class="comment"># 现在的结果</span></span><br></pre></td></tr></table></figure></li></ul><p>同理任何你想对任何对象进行操作都可以使用上面的方法。<br>下面留个作业<br>1.使用上面的dir（）跟help（）两个函数去了解字符串与数字类型对象的方法以及我没有说完的list的方法</p><blockquote><p>相信我，这两个函数是你学习python的神器</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      python基础之数据类型
+    
+    </summary>
+    
+      <category term="python" scheme="https://www.toshareword.com/categories/python/"/>
+    
+    
+      <category term="教程" scheme="https://www.toshareword.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
+    
+      <category term="list" scheme="https://www.toshareword.com/tags/list/"/>
+    
+      <category term="help()" scheme="https://www.toshareword.com/tags/help/"/>
+    
+      <category term="dir()" scheme="https://www.toshareword.com/tags/dir/"/>
+    
+  </entry>
   
   <entry>
     <title>CG脚本开发之python基础概念（二）</title>
@@ -34,9 +64,9 @@
       <category term="python" scheme="https://www.toshareword.com/categories/python/"/>
     
     
-      <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
-    
       <category term="教程" scheme="https://www.toshareword.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
     
       <category term="数据类型" scheme="https://www.toshareword.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
     
@@ -62,9 +92,9 @@
       <category term="python" scheme="https://www.toshareword.com/categories/python/"/>
     
     
-      <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
-    
       <category term="教程" scheme="https://www.toshareword.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
     
       <category term="变量" scheme="https://www.toshareword.com/tags/%E5%8F%98%E9%87%8F/"/>
     
@@ -90,11 +120,11 @@
       <category term="maya" scheme="https://www.toshareword.com/categories/maya/"/>
     
     
+      <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
+    
       <category term="maya" scheme="https://www.toshareword.com/tags/maya/"/>
     
       <category term="mel" scheme="https://www.toshareword.com/tags/mel/"/>
-    
-      <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
     
       <category term="python设置maya的渲染设置" scheme="https://www.toshareword.com/tags/python%E8%AE%BE%E7%BD%AEmaya%E7%9A%84%E6%B8%B2%E6%9F%93%E8%AE%BE%E7%BD%AE/"/>
     
@@ -118,11 +148,11 @@
       <category term="maya" scheme="https://www.toshareword.com/categories/maya/"/>
     
     
-      <category term="maya" scheme="https://www.toshareword.com/tags/maya/"/>
+      <category term="教程" scheme="https://www.toshareword.com/tags/%E6%95%99%E7%A8%8B/"/>
     
       <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
     
-      <category term="教程" scheme="https://www.toshareword.com/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="maya" scheme="https://www.toshareword.com/tags/maya/"/>
     
       <category term="pyside2" scheme="https://www.toshareword.com/tags/pyside2/"/>
     
