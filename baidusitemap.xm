@@ -11,9 +11,9 @@
         <title>CG脚本开发之python列表list</title>
         <pubTime>2018-10-28T13:20:30.000Z</pubTime>
         
-        <tag>教程</tag>
-         
         <tag>python</tag>
+         
+        <tag>教程</tag>
          
         <tag>list</tag>
          
@@ -39,9 +39,9 @@
         <title>CG脚本开发之python基础概念（二）</title>
         <pubTime>2018-10-24T16:18:08.000Z</pubTime>
         
-        <tag>教程</tag>
-         
         <tag>python</tag>
+         
+        <tag>教程</tag>
          
         <tag>数据类型</tag>
          
@@ -65,9 +65,9 @@
         <title>CG脚本开发之python基础概念（一）</title>
         <pubTime>2018-10-24T15:58:08.000Z</pubTime>
         
-        <tag>教程</tag>
-         
         <tag>python</tag>
+         
+        <tag>教程</tag>
          
         <tag>变量</tag>
          
@@ -91,11 +91,11 @@
         <title>python开发环境的搭建</title>
         <pubTime>2018-08-26T14:07:08.000Z</pubTime>
         
-        <tag>教程</tag>
+        <tag>maya</tag>
          
         <tag>python</tag>
          
-        <tag>maya</tag>
+        <tag>教程</tag>
          
         <tag>pyside2</tag>
          
@@ -121,11 +121,11 @@
         <title>maya python设置maya的渲染设置</title>
         <pubTime>2018-08-26T14:07:08.000Z</pubTime>
         
-        <tag>python</tag>
-         
         <tag>maya</tag>
          
         <tag>mel</tag>
+         
+        <tag>python</tag>
          
         <tag>python设置maya的渲染设置</tag>
          

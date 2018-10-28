@@ -8,8 +8,8 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>教程</tag>
         <tag>python</tag>
+        <tag>教程</tag>
         <tag>list</tag>
         <tag>help()</tag>
         <tag>dir()</tag>
@@ -23,8 +23,8 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>教程</tag>
         <tag>python</tag>
+        <tag>教程</tag>
         <tag>数据类型</tag>
         <tag>标识符命名规则</tag>
       </tags>
@@ -37,8 +37,8 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>教程</tag>
         <tag>python</tag>
+        <tag>教程</tag>
         <tag>变量</tag>
         <tag>常量</tag>
       </tags>
@@ -51,9 +51,9 @@
         <category>maya</category>
       </categories>
       <tags>
-        <tag>教程</tag>
-        <tag>python</tag>
         <tag>maya</tag>
+        <tag>python</tag>
+        <tag>教程</tag>
         <tag>pyside2</tag>
         <tag>pycharm</tag>
         <tag>git</tag>
@@ -67,9 +67,9 @@
         <category>maya</category>
       </categories>
       <tags>
-        <tag>python</tag>
         <tag>maya</tag>
         <tag>mel</tag>
+        <tag>python</tag>
         <tag>python设置maya的渲染设置</tag>
       </tags>
   </entry>
