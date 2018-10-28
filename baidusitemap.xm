@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://www.toshareword.com/2018/10/28/mulv/</loc>
+    <lastmod>2018-10-28T13:47:59.996Z</lastmod>
+    <data>
+        <display>
+        <title>python 目录</title>
+        <pubTime>2018-10-28T13:44:12.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="https://www.toshareword.com/categories/python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.toshareword.com/2018/10/28/new-CG-jiaoben-jichu3/</loc>
     <lastmod>2018-10-28T13:23:01.597Z</lastmod>
     <data>
