@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>https://www.toshareword.com/2018/11/11/new-CG-jiaoben-jichu4/</loc>
+    <lastmod>2018-11-11T02:47:37.796Z</lastmod>
+    <data>
+        <display>
+        <title>CG脚本开发之python列表tuple元组</title>
+        <pubTime>2018-11-11T02:30:58.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>教程</tag>
+         
+        <tag>数据类型</tag>
+         
+        <tag>元组</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="https://www.toshareword.com/categories/python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.toshareword.com/2018/10/28/mulv/</loc>
     <lastmod>2018-10-28T13:47:59.996Z</lastmod>
     <data>
@@ -111,11 +137,11 @@
         <title>python开发环境的搭建</title>
         <pubTime>2018-08-26T14:07:08.000Z</pubTime>
         
-        <tag>maya</tag>
-         
         <tag>python</tag>
          
         <tag>教程</tag>
+         
+        <tag>maya</tag>
          
         <tag>pyside2</tag>
          
@@ -141,11 +167,11 @@
         <title>maya python设置maya的渲染设置</title>
         <pubTime>2018-08-26T14:07:08.000Z</pubTime>
         
+        <tag>python</tag>
+         
         <tag>maya</tag>
          
         <tag>mel</tag>
-         
-        <tag>python</tag>
          
         <tag>python设置maya的渲染设置</tag>
          

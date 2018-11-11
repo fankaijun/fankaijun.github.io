@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.toshareword.com/"/>
-  <updated>2018-10-28T13:47:59.996Z</updated>
+  <updated>2018-11-11T02:47:37.796Z</updated>
   <id>https://www.toshareword.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CG脚本开发之python列表tuple元组</title>
+    <link href="https://www.toshareword.com/2018/11/11/new-CG-jiaoben-jichu4/"/>
+    <id>https://www.toshareword.com/2018/11/11/new-CG-jiaoben-jichu4/</id>
+    <published>2018-11-11T02:30:58.000Z</published>
+    <updated>2018-11-11T02:47:37.796Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="元组（tuple）"><a href="#元组（tuple）" class="headerlink" title="元组（tuple）"></a><center>元组（tuple）</center></h3><p>元组是我们cg开发中常用的数据类型，跟列表一样可以存储很多对象，<strong>他们的区别在于list里边里面的值可以修改而元组里面的值不可修改。</strong></p><p><strong>什么是元组：凡是使用圆括号括起来的就是元组，除空元组外，其他的元组里面必须用逗号分割里面的元素，元组里只有一个元素的后面必须有一个逗号。元组里面的元素对象不可更换但是对象本身可以改变（下面解释这句话）。</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">text_tuple = () <span class="comment"># 定义一个空元组</span></span><br><span class="line"></span><br><span class="line">type(text_tuple) <span class="comment"># 打印变量类型</span></span><br><span class="line"></span><br><span class="line">Out[<span class="number">3</span>]: tuple <span class="comment"># 显示变量的类型是元组</span></span><br><span class="line"></span><br><span class="line">text_tuple = (<span class="number">1</span>) <span class="comment"># 定义一个变量</span></span><br><span class="line"></span><br><span class="line">type(text_tuple) <span class="comment"># 打印变量类型</span></span><br><span class="line"></span><br><span class="line">Out[<span class="number">5</span>]: int <span class="comment"># 显示变量的类型是整数</span></span><br><span class="line"></span><br><span class="line">text_tuple = (<span class="number">1</span>,) <span class="comment"># 定义一个变量</span></span><br><span class="line"></span><br><span class="line">type(text_tuple) <span class="comment"># 打印变量类型</span></span><br><span class="line"></span><br><span class="line">Out[<span class="number">7</span>]: tuple <span class="comment"># 显示变量的类型是元组</span></span><br><span class="line"></span><br><span class="line">text_tuple = (<span class="number">1</span>,<span class="number">2</span>) <span class="comment"># 定义一个变量</span></span><br><span class="line"></span><br><span class="line">type(text_tuple) <span class="comment"># 打印变量类型</span></span><br><span class="line"></span><br><span class="line">Out[<span class="number">9</span>]: tuple <span class="comment"># 显示变量的类型是元组</span></span><br></pre></td></tr></table></figure></p><p><em>从上面可以看出当你定义只有一个元素元组时在元素后面必须加上一个逗号。</em></p><h3 id="修改元组"><a href="#修改元组" class="headerlink" title="修改元组"></a><center>修改元组</center></h3><p>请看例子：</p><p><strong>元组的每个索引位置都指向一个内存地址（这个是理解上面那句话的核心）</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">3</span> <span class="comment"># 计算机会开辟一片内存用来存储3这个地址，并让num指向这个内存地址</span></span><br><span class="line"></span><br><span class="line">list = [<span class="number">1</span>，num] <span class="comment"># 计算机会开辟一片内存用来存储列表的地址，并让list指向这个内存地址，num把自己指向的内存地址给list的第二个索引元素list[1]让它也指向这个地址</span></span><br><span class="line"></span><br><span class="line">tupel = (<span class="number">1</span>,num, list) <span class="comment"># 计算机会开辟一片内存用来存储元组的地址，并让tupel指向这个内存地址，tupel第一个索引tupel[0]指向元素1的内存地址，tupel第二个索引tupel[1]指向元素num的所指向的内存地址，tupel第三个索引tupel[2]指向元素list的所指向的内存地址</span></span><br><span class="line"></span><br><span class="line">现在来说说什么是“元组里面的元素对象不可更换（元组里面索引位置指向的内存地址不可改变）”</span><br><span class="line"></span><br><span class="line">tupel[<span class="number">0</span>] = <span class="number">9</span> <span class="comment"># 计算机会新创建一个内存存储9并返回内存地址，现在让tupel第一个索引tupel[0]的指向的刚返回的内存地址，违背了“元组里面索引位置指向的内存地址不可改变”这句话</span></span><br><span class="line"></span><br><span class="line">就会报错：TypeError: <span class="string">'tuple'</span> object does <span class="keyword">not</span> support item assignment</span><br><span class="line"></span><br><span class="line">因为元组里面的元素对象不可更换，这句话就是说“元组里面索引位置指向的内存地址不可改变”</span><br><span class="line"></span><br><span class="line">num = <span class="number">6</span> <span class="comment"># 给num从新赋值</span></span><br><span class="line"></span><br><span class="line">tupel[<span class="number">2</span>][<span class="number">1</span>] = num</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> tupel</span><br><span class="line"></span><br><span class="line">结果是（<span class="number">1</span>， <span class="number">3</span>， [<span class="number">1</span>，<span class="number">6</span>]）</span><br><span class="line"></span><br><span class="line">你可能会问为啥第三个元素可以改变</span><br><span class="line"></span><br><span class="line">然后你认真读下这句话：元组里面索引位置指向的内存地址不可改变，即tupel[<span class="number">0</span>]，tupel[<span class="number">1</span>]，tupel[<span class="number">2</span>]这个三个指向内存地址没有改变，所以你就会说对啊，不应该是</span><br><span class="line"></span><br><span class="line">（<span class="number">1</span>， <span class="number">3</span>， [<span class="number">1</span>，<span class="number">3</span>]），但是tupel[<span class="number">2</span>]指向列表list的内存地址，tupel[<span class="number">2</span>]的这个指向的内存地址并没有改变，而是内存里存储的值改变了，因为列表里的索引指向的内存地址是可以改变的，我如果还是没有说清楚的话欢迎私信我</span><br></pre></td></tr></table></figure></p><h3 id="访问元组"><a href="#访问元组" class="headerlink" title="访问元组"></a><center>访问元组</center></h3><p>获取元组里面元素的方法跟list一样可以通过索引进行访问<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">tub = （<span class="number">1</span>，<span class="number">2</span>，<span class="number">3</span>, <span class="number">4</span>）</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> tub[<span class="number">0</span>] <span class="comment"># 索引是从0开始的</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> tub[<span class="number">2</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> tub[<span class="number">1</span>:<span class="number">3</span>] <span class="comment"># 通过切片索引,是获取第2个元素到第3个元素之间的元素，用数学坐标的方法理解就是[1，3）</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>(<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">print</span> tub[:<span class="number">3</span>] <span class="comment"># 通过切片索引,是获取第0个元素到第3个元素之间的元素，用数学坐标的方法理解就是[0，3）</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>(<span class="number">1</span>，<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">print</span> tub[<span class="number">1</span>:] <span class="comment"># 通过切片索引,是获取第1个元素到最后一个元素之间的元素，用数学坐标的方法理解就是[0，3）</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>(<span class="number">1</span>，<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">&gt;&gt;<span class="keyword">print</span> tub[<span class="number">0</span>:<span class="number">-1</span>] <span class="comment"># 通过切片索引,是获取最后一个元素到倒数第二个元素之间的元素，用数学坐标的方法理解就是[0，-2）只要是负数就是从后往前数第几个元素，最后一个元素的索引是-1 相当于tub[0:2]，用数学坐标的方法理解就是[0，2）</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>(<span class="number">1</span>，<span class="number">2</span>)</span><br></pre></td></tr></table></figure></p><p>下面给爱学习的你留个作业:</p><ul><li><p>用心体会下上面说过的话</p></li><li><p>自己分析下元组与列表的区别</p></li><li><p>分析下什么情况下使用列表什么情况下使用元组 </p></li></ul><p><strong>这些之后会在cg开发的案例中使用，只有你真正理解了才能游刃有余。</strong></p><blockquote><p>送给大家一句话也是我刚开始学python的时候RenderG的张杰杰哥给我说的一句话：用心去体会代码，这样你才能更好的理解。体会体会体会</p></blockquote><p>一定要自己去尝试可以直接在maya的脚本编辑器里去做练习，选择python</p><h2 id="欢迎扫下方二维码关注我的微信公众号，每周都有新分享说句有点那啥的话：为中国影视流程工业化的崛起而学习python"><a href="#欢迎扫下方二维码关注我的微信公众号，每周都有新分享说句有点那啥的话：为中国影视流程工业化的崛起而学习python" class="headerlink" title="欢迎扫下方二维码关注我的微信公众号，每周都有新分享说句有点那啥的话：为中国影视流程工业化的崛起而学习python"></a><em>欢迎扫下方二维码关注我的微信公众号，每周都有新分享</em>说句有点那啥的话：为中国影视流程工业化的崛起而学习python</h2>]]></content>
+    
+    <summary type="html">
+    
+      python元组
+    
+    </summary>
+    
+      <category term="python" scheme="https://www.toshareword.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
+    
+      <category term="教程" scheme="https://www.toshareword.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="数据类型" scheme="https://www.toshareword.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    
+      <category term="元组" scheme="https://www.toshareword.com/tags/%E5%85%83%E7%BB%84/"/>
+    
+  </entry>
   
   <entry>
     <title>python 目录</title>
@@ -142,11 +170,11 @@
       <category term="maya" scheme="https://www.toshareword.com/categories/maya/"/>
     
     
-      <category term="maya" scheme="https://www.toshareword.com/tags/maya/"/>
-    
       <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
     
       <category term="教程" scheme="https://www.toshareword.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="maya" scheme="https://www.toshareword.com/tags/maya/"/>
     
       <category term="pyside2" scheme="https://www.toshareword.com/tags/pyside2/"/>
     
@@ -174,11 +202,11 @@
       <category term="maya" scheme="https://www.toshareword.com/categories/maya/"/>
     
     
+      <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
+    
       <category term="maya" scheme="https://www.toshareword.com/tags/maya/"/>
     
       <category term="mel" scheme="https://www.toshareword.com/tags/mel/"/>
-    
-      <category term="python" scheme="https://www.toshareword.com/tags/python/"/>
     
       <category term="python设置maya的渲染设置" scheme="https://www.toshareword.com/tags/python%E8%AE%BE%E7%BD%AEmaya%E7%9A%84%E6%B8%B2%E6%9F%93%E8%AE%BE%E7%BD%AE/"/>
     

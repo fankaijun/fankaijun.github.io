@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[CG脚本开发之python列表tuple元组]]></title>
+    <url>%2F2018%2F11%2F11%2Fnew-CG-jiaoben-jichu4%2F</url>
+    <content type="text"><![CDATA[元组（tuple）元组是我们cg开发中常用的数据类型，跟列表一样可以存储很多对象，他们的区别在于list里边里面的值可以修改而元组里面的值不可修改。 什么是元组：凡是使用圆括号括起来的就是元组，除空元组外，其他的元组里面必须用逗号分割里面的元素，元组里只有一个元素的后面必须有一个逗号。元组里面的元素对象不可更换但是对象本身可以改变（下面解释这句话）。1234567891011121314151617181920212223text_tuple = () # 定义一个空元组type(text_tuple) # 打印变量类型Out[3]: tuple # 显示变量的类型是元组text_tuple = (1) # 定义一个变量type(text_tuple) # 打印变量类型Out[5]: int # 显示变量的类型是整数text_tuple = (1,) # 定义一个变量type(text_tuple) # 打印变量类型Out[7]: tuple # 显示变量的类型是元组text_tuple = (1,2) # 定义一个变量type(text_tuple) # 打印变量类型Out[9]: tuple # 显示变量的类型是元组 从上面可以看出当你定义只有一个元素元组时在元素后面必须加上一个逗号。 修改元组请看例子： 元组的每个索引位置都指向一个内存地址（这个是理解上面那句话的核心）123456789101112131415161718192021222324252627num = 3 # 计算机会开辟一片内存用来存储3这个地址，并让num指向这个内存地址list = [1，num] # 计算机会开辟一片内存用来存储列表的地址，并让list指向这个内存地址，num把自己指向的内存地址给list的第二个索引元素list[1]让它也指向这个地址tupel = (1,num, list) # 计算机会开辟一片内存用来存储元组的地址，并让tupel指向这个内存地址，tupel第一个索引tupel[0]指向元素1的内存地址，tupel第二个索引tupel[1]指向元素num的所指向的内存地址，tupel第三个索引tupel[2]指向元素list的所指向的内存地址现在来说说什么是“元组里面的元素对象不可更换（元组里面索引位置指向的内存地址不可改变）”tupel[0] = 9 # 计算机会新创建一个内存存储9并返回内存地址，现在让tupel第一个索引tupel[0]的指向的刚返回的内存地址，违背了“元组里面索引位置指向的内存地址不可改变”这句话就会报错：TypeError: 'tuple' object does not support item assignment因为元组里面的元素对象不可更换，这句话就是说“元组里面索引位置指向的内存地址不可改变”num = 6 # 给num从新赋值tupel[2][1] = numprint tupel结果是（1， 3， [1，6]）你可能会问为啥第三个元素可以改变然后你认真读下这句话：元组里面索引位置指向的内存地址不可改变，即tupel[0]，tupel[1]，tupel[2]这个三个指向内存地址没有改变，所以你就会说对啊，不应该是（1， 3， [1，3]），但是tupel[2]指向列表list的内存地址，tupel[2]的这个指向的内存地址并没有改变，而是内存里存储的值改变了，因为列表里的索引指向的内存地址是可以改变的，我如果还是没有说清楚的话欢迎私信我 访问元组获取元组里面元素的方法跟list一样可以通过索引进行访问12345678910111213141516171819202122232425tub = （1，2，3, 4）print tub[0] # 索引是从0开始的&gt;&gt;&gt; 1print tub[2]&gt;&gt;&gt; 3print tub[1:3] # 通过切片索引,是获取第2个元素到第3个元素之间的元素，用数学坐标的方法理解就是[1，3）&gt;&gt;&gt; (2,3)&gt;print tub[:3] # 通过切片索引,是获取第0个元素到第3个元素之间的元素，用数学坐标的方法理解就是[0，3）&gt;&gt;&gt; (1，2,3)&gt;print tub[1:] # 通过切片索引,是获取第1个元素到最后一个元素之间的元素，用数学坐标的方法理解就是[0，3）&gt;&gt;&gt; (1，2,3)&gt;&gt;print tub[0:-1] # 通过切片索引,是获取最后一个元素到倒数第二个元素之间的元素，用数学坐标的方法理解就是[0，-2）只要是负数就是从后往前数第几个元素，最后一个元素的索引是-1 相当于tub[0:2]，用数学坐标的方法理解就是[0，2）&gt;&gt;&gt; (1，2) 下面给爱学习的你留个作业: 用心体会下上面说过的话 自己分析下元组与列表的区别 分析下什么情况下使用列表什么情况下使用元组 这些之后会在cg开发的案例中使用，只有你真正理解了才能游刃有余。 送给大家一句话也是我刚开始学python的时候RenderG的张杰杰哥给我说的一句话：用心去体会代码，这样你才能更好的理解。体会体会体会 一定要自己去尝试可以直接在maya的脚本编辑器里去做练习，选择python 欢迎扫下方二维码关注我的微信公众号，每周都有新分享说句有点那啥的话：为中国影视流程工业化的崛起而学习python]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>教程</tag>
+        <tag>数据类型</tag>
+        <tag>元组</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python 目录]]></title>
     <url>%2F2018%2F10%2F28%2Fmulv%2F</url>
     <content type="text"><![CDATA[cg流程系统开发CG插件python开发环境的搭建CG插件之python基础概念之变量与常量CG插件之python基础概念之数字与字符串CG插件之python基础概念之列表]]></content>
@@ -62,9 +76,9 @@
         <category>maya</category>
       </categories>
       <tags>
-        <tag>maya</tag>
         <tag>python</tag>
         <tag>教程</tag>
+        <tag>maya</tag>
         <tag>pyside2</tag>
         <tag>pycharm</tag>
         <tag>git</tag>
@@ -78,9 +92,9 @@
         <category>maya</category>
       </categories>
       <tags>
+        <tag>python</tag>
         <tag>maya</tag>
         <tag>mel</tag>
-        <tag>python</tag>
         <tag>python设置maya的渲染设置</tag>
       </tags>
   </entry>
